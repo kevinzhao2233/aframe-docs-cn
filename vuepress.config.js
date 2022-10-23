@@ -63,8 +63,8 @@ export default defineUserConfig({
         link: '/guides/',
         children: [
           '/guides/building-a-basic-scene.md',
-          '/guides/building-a-360-image-gallery.md',
-          '/guides/building-a-minecraft-demo.md',
+          // '/guides/building-a-360-image-gallery.md',
+          // '/guides/building-a-minecraft-demo.md',
         ],
       },
     ],
