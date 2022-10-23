@@ -14,8 +14,8 @@ experience:
 
 - [**A-Frame Inspector**][inspector] - Inspector tool to get a different view of the scene
   and see the visual effect of tweaking entities. The VR analog to the
-  browser's DOM inspector. Can be opened on any A-Frame scene with `<ctrl> +
-  <alt> + i`.
+  browser's DOM inspector. Can be opened on any A-Frame scene with `ctrl +
+  alt + i`.
 - Keyboard shortcuts.
 - [**Motion Capture**][motioncapture] - A tool to record and replay headset and
   controller pose and events. Hit record, move around inside the VR headset,
@@ -46,7 +46,7 @@ Let's view source!
 
 ### Opening the Inspector
 
-The easiest way to use is to press the **`<ctrl> + <alt> + i`** shortcut on
+The easiest way to use is to press the **`ctrl + alt + i`** shortcut on
 our keyboard. This will fetch the Inspector code via CDN and open up our scene
 in the Inspector. The same shortcut toggles the Inspector closed.
 
@@ -169,7 +169,7 @@ every time we want to test something, we can take our recording, send it to,
 say, a Macbook, head out to a coffee shop, and continue developing our VR
 application using the recording on a stable browser. Add some `console.log`s,
 refactor our application, or freeze the replay with the A-Frame Inspector
-(`<ctrl> + <alt> + i`) to poke around.
+(`ctrl + alt + i`) to poke around.
 
 3. **Automated integration testing**: We can record a bunch of different recordings as
 regression test cases and QA. Store the recordings, do some development, and

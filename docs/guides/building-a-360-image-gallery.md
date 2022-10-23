@@ -11,7 +11,7 @@ examples:
 
 [glitch]: https://glitch.com/edit/#!/aframe-gallery?path=index.html
 
-![360&deg; Image Viewer](/images/docs/360-image-viewer.png)
+![360&deg; Image Viewer](https://aframe.io/images/docs/360-image-viewer.png)
 
 Let's build an interactive gaze-based **360&deg; image gallery**. There will be
 three panels which the user can click on. Once clicked, the background will
