@@ -1,7 +1,7 @@
 ---
 title: "Hosting & Publishing"
 type: introduction
-layout: docs
+# layout: docs
 parent_section: introduction
 order: 12
 ---

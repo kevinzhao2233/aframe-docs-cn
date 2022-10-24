@@ -1,7 +1,7 @@
 ---
 title: Developing with three.js
 type: introduction
-layout: docs
+# layout: docs
 parent_section: introduction
 order: 7
 examples: []

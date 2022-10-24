@@ -1,7 +1,7 @@
 ---
 title: Visual Inspector & Dev Tools
 type: introduction
-layout: docs
+# layout: docs
 parent_section: introduction
 order: 11
 ---

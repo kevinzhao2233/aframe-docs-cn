@@ -1,7 +1,7 @@
 ---
 title: Entity-Component-System
 type: introduction
-layout: docs
+# layout: docs
 order: 5
 examples:
   - title: Community Components in Action

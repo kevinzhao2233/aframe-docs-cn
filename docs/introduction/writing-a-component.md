@@ -1,7 +1,7 @@
 ---
 title: Writing a Component
 type: introduction
-layout: docs
+# layout: docs
 parent_section: introduction
 order: 8
 examples: []

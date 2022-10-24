@@ -12,9 +12,11 @@ This installation section offers several ways to get started with A-Frame,
 although most methods don't require any actual installation since A-Frame
 is primarily HTML and JavaScript.
 
+这里提供了几种开始使用 A-Frame 的方法，大多数方法不需要任何实际安装，因为 A-Frame 主要是 HTML 和 JavaScript。
+
 <!--toc-->
 
-## Code Editors in the Browser
+## 在浏览器中编写代码
 
 The fastest way is to start playing from within the browser.
 
@@ -43,16 +45,16 @@ Below are a few other A-Frame Glitches for starters:
 - [aframe-vaporwave](https://glitch.com/~aframe-vaporwave) - Retro-futuristic scene.
 - [networked-aframe](https://glitch.com/~networked-aframe) - Multiuser.
 
-### Other Code Editors
+### 其他代码编辑器
 
 Below are a couple of A-Frame starter kits on other browser-based code
 editors. Both support remixing or forking:
 
 - [CodePen &mdash; A-Frame](https://codepen.io/mozvr/pen/BjygdO)
 
-## Local Development
+## 本地开发
 
-### Use a Local Server
+### 使用本地服务
 
 For the options below, we should develop projects using a local server so that
 files are properly served. Options of local servers include:
@@ -64,11 +66,11 @@ files are properly served. Options of local servers include:
 
 Once we are running our server, we can open our project in the browser using
 the local URL and port which the server is running on (e.g.,
-`http://localhost:8000`). Try *not* to open the project using the `file://`
+`http://localhost:8000`). Try _not_ to open the project using the `file://`
 protocol which does not provide a domain; absolute and relative URLs may not
 work.
 
-### Download the Boilerplate on GitHub
+### 在 GitHub 上下载样板文件
 
 [ghpages]: https://pages.github.com/
 
@@ -85,10 +87,12 @@ We can grab the boilerplate in one of two ways:
 
 <a class="btn btn-download" href="https://github.com/aframevr/aframe-boilerplate/archive/master.zip" download="aframe-boilerplate.zip">Download .ZIP<span></span></a>
 
-### Include the JS Build
+### 引用构建好的 JS
 
 To include A-Frame in an HTML file, we drop a `<script>` tag pointing to the
 CDN build:
+
+我们可以直接引用 CDN 上构建好的脚本，在 HTML 文件中引入 A-Frame。
 
 ```html
 <head>
@@ -98,12 +102,17 @@ CDN build:
 
 If we want to serve it ourselves, we can download the JS build:
 
-<a id="builds-prod" class="btn btn-download" href="https://aframe.io/releases/1.3.0/aframe.min.js" download>Production Version <span>1.3.0</span></a> <em class="install-note">Minified</em>
-<a id="builds-dev" class="btn btn-download" href="https://aframe.io/releases/1.3.0/aframe.js" download>Development Version <span>1.3.0</span></a> <em class="install-note">Uncompressed with Source Maps</em>
+如果我们想自己提供服务，我们可以下载构建好的 JS 代码:
 
-### Install from npm
+<a id="builds-prod" class="btn btn-download" href="https://aframe.io/releases/1.3.0/aframe.min.js" download>生产版本 <span>1.3.0</span></a> <em class="install-note">已压缩</em>
+
+<a id="builds-dev" class="btn btn-download" href="https://aframe.io/releases/1.3.0/aframe.js" download>开发版本 <span>1.3.0</span></a> <em class="install-note">未压缩，并提供 Source Maps</em>
+
+### 使用 npm 安装
 
 We can also install A-Frame through npm:
+
+我们也可以通过 npm 安装：
 
 ```bash
 $ npm install aframe
@@ -112,6 +121,8 @@ $ npm install aframe
 Then we can bundle A-Frame into our application. For example, with Browserify
 or Webpack:
 
+然后我们可以将 A-Frame 捆绑到我们的应用中。例使 如 Browserify 或 Webpack:
+
 ```js
 require('aframe');
 ```
@@ -119,7 +130,9 @@ require('aframe');
 [angle]: https://www.npmjs.com/package/angle
 
 If you use npm, you can use [`angle`][angle], a command line interface for
-A-Frame.  `angle` can initialize a scene template with a single command:
+A-Frame. `angle` can initialize a scene template with a single command:
+
+如果你使用 npm，你可以使用[`angle`][angle]，这是一个命令行界面，用于 A-Frame。`angle` 可以用一个命令初始化一个场景模板:
 
 ```sh
 npm install -g angle && angle initscene
@@ -145,8 +158,8 @@ In your `index.html`, adjust as follows:
 ```html
 <head>
   <meta
-        http-equiv="Content-Security-Policy"
-        content="
+    http-equiv="Content-Security-Policy"
+    content="
           default-src 
             'self' 
             data: 
@@ -170,38 +183,38 @@ In your `index.html`, adjust as follows:
             blob:                         <-- required
             ;
         "
-      />
+  />
   ...
   <script src="https://cdn.jsdelivr.net/npm/aframe@1.3.0/dist/aframe-master.min.js"></script>
-  <script id='my-scene' type="text/html">
+  <script id="my-scene" type="text/html">
     ...your scene goes here...
   </script>
   <script>
-    document.addEventListener('deviceready', function() {
+    document.addEventListener('deviceready', function () {
       // After the 'deviceready' event, Cordova is ready for you to render your A-Frame scene.
-      document.getElementById('scene-root').innerHTML = document.getElementById('my-scene').innerHTML
-    })
+      document.getElementById('scene-root').innerHTML = document.getElementById('my-scene').innerHTML;
+    });
   </script>
 </head>
 <body>
-  <div id='scene-root'></div>
+  <div id="scene-root"></div>
   ...
 </body>
 ```
 
 ### Discussion
 
-
 #### deviceready
+
 The most important difference between a browser environment and a Cordova environment is waiting for the `deviceready` event
-before rendering your scene. 
+before rendering your scene.
 
 The sample above shows a pure DOM+JS approach, but you can also use a framework like React:
 
 ```javascript
 document.addEventListener('deviceready', () => {
-  ReactDOM.render(<Root />, document.getElementById('root'))
-})
+  ReactDOM.render(<Root />, document.getElementById('root'));
+});
 ```
 
 #### Layout

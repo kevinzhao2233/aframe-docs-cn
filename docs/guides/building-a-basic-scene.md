@@ -1,5 +1,5 @@
 ---
-title: Building a Basic Scene
+title: 构建一个基础场景
 section_title: Guides
 type: guides
 # layout: docs
@@ -13,6 +13,12 @@ examples:
   - title: Basic Guide with Environment
     src: https://glitch.com/edit/#!/aframe-basic-guide-with-environment?path=index.html
 ---
+
+# 构建一个基础场景
+
+**本页示例**
+
+[Basic Guide with Environment](https://glitch.com/edit/#!/aframe-basic-guide-with-environment?path=index.html)
 
 [primitives]: ../primitives/
 [position]: ../components/position.md

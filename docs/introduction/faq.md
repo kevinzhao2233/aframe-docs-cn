@@ -1,7 +1,7 @@
 ---
 title: FAQ
 type: introduction
-layout: docs
+# layout: docs
 parent_section: introduction
 order: 14
 ---

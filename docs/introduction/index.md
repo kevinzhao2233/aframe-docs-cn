@@ -16,7 +16,11 @@ examples:
 
 # 简介
 
-## Getting Started
+**本页示例**
+
+[Hello, World!](https://glitch.com/edit/#!/aframe?path=index.html)
+
+## 入门
 
 [glitch]: http://glitch.com/~aframe
 
@@ -25,6 +29,8 @@ anything. A great way to try out A-Frame is to **[remix the starter example on
 Glitch][glitch]**, an online code editor that instantly hosts and deploys for
 free. Alternatively, create an `.html` file and include A-Frame in the
 `<head>`:
+
+A-Frame 可以从一个普通的 HTML 文件开发而无需安装任何依赖。尝试 A-Frame 的一个很好的方法是 **[remix the starter example on Glitch][glitch]**，一个免费的在线代码编辑器，可以即时托管和部署。或者，创建一个 `.html` 文件并引入 A-Frame 到 `<head>`:
 
 ```html
 <html>
@@ -43,14 +49,16 @@ free. Alternatively, create an `.html` file and include A-Frame in the
 </html>
 ```
 
-[Installation]: ./installation.md
+[installation]: ./installation.md
 [school]: https://aframe.io/school/
 
 The [Installation] page provides more options for getting started with A-Frame.
 To get started learning A-Frame, check out [A-Frame School][school] for visual
 step-by-step lessons to complement the documentation.
 
-## What is A-Frame?
+[安装][installation] 页面提供更多方式来入门 A-Frame。要开始学习 A-Frame，请查看 [A-Frame 学校][school]补充文档的分步教程。
+
+## 什么是 A-Frame?
 
 [github]: https://github.com/aframevr/
 [community]: https://aframe.io/community/
@@ -63,6 +71,8 @@ is not just a 3D scene graph or a markup language; the core is a powerful
 entity-component framework that provides a declarative, extensible, and
 composable structure to [three.js].
 
+:a:-Frame 是一个构建虚拟现实（VR）体验的 web 框架。A-Frame 基于 HTML，让入门变得很简单。但是 A-Frame 不仅仅是 3D 场景画布或标记预研；其核心思想是基于 [three.js] 来提供一个声明式、可扩展、组件化的实体-组件框架。
+
 Originally conceived within Mozilla and now maintained by the co-creators of
 A-Frame within [Supermedium](https://supermedium.com), A-Frame was developed to
 be an easy yet powerful way to develop VR content. As an [independent open
@@ -71,9 +81,11 @@ communities][community].
 
 A-Frame supports most VR headsets such as Vive, Rift, Windows Mixed Reality,
 Daydream, GearVR, Cardboard, Oculus Go, and can even be used for augmented
-reality.  Although A-Frame supports the whole spectrum, A-Frame aims to define
+reality. Although A-Frame supports the whole spectrum, A-Frame aims to define
 fully immersive interactive VR experiences that go beyond basic 360&deg;
 content, making full use of positional tracking and controllers.
+
+A-Frame 支持主流 VR 头显如 Vive, Rift, Windows 混合现实, Daydream, GearVR, Cardboard, Oculus Go, 甚至可被用于增强现实（AR）。虽然 A-Frame 支持全谱，A-Frame 的目标是定义具有位置跟踪和操控的完全身临其境和交互式 VR 体验，超出基本的 360° 内容呈现。
 
 <div class="docs-introduction-examples">
   <a href="https://supermedium.com/supercraft">
@@ -96,7 +108,7 @@ content, making full use of positional tracking and controllers.
   </a>
 </div>
 
-## Features
+## 特性
 
 :eyeglasses: **VR Made Simple**: Just drop in a `<script>` tag and `<a-scene>`.
 A-Frame will handle 3D boilerplate, VR setup, and default controls. Nothing to
@@ -118,9 +130,8 @@ all respective controllers. Don't have a headset or controllers? No problem!
 A-Frame still works on standard desktop and smartphones.
 
 [ecs]: ./entity-component-system.md
-
-[A-Painter]: https://github.com/aframevr/a-painter
-[Tilt Brush]: https://www.tiltbrush.com/
+[a-painter]: https://github.com/aframevr/a-painter
+[tilt brush]: https://www.tiltbrush.com/
 
 :zap: **Performance**: A-Frame is optimized from the ground up for WebVR. While
 A-Frame uses the DOM, its elements don't touch the browser layout engine. 3D
@@ -131,7 +142,7 @@ running smoothly at 90fps.
 [inspector]: ./visual-inspector-and-dev-tools.md
 
 :mag: **Visual Inspector**: A-Frame provides a handy built-in [visual 3D
-inspector][inspector]. Open up *any* A-Frame scene, hit `ctrl + alt + i`,
+inspector][inspector]. Open up _any_ A-Frame scene, hit `ctrl + alt + i`,
 and fly around to peek under the hood!
 
 ![Inspector](https://cloud.githubusercontent.com/assets/674727/25377018/27be9cce-295b-11e7-9098-3e85ac1fe172.gif)
@@ -160,26 +171,26 @@ as Google, Microsoft, Oculus, and Samsung have made contributions to A-Frame.
 
 ## Off You Go!
 
-[Discord]: https://supermedium.com/discord
+[discord]: https://supermedium.com/discord
 [slack]: https://aframevr.slack.com/join/shared_invite/zt-f6rne3ly-ekVaBU~Xu~fsZHXr56jacQ
 
 If it's your first time here, here's a plan for success for getting into
 A-Frame:
 
 1. [Subscribe to the Newsletter](https://aframe.io/subscribe/) for updates and
-tips on A-Frame and to see featured community projects.
+   tips on A-Frame and to see featured community projects.
 
 2. Read through the documentation to get a grasp.
-[Glitch](https://glitch.com/~aframe) is used as a recommended coding playground
-and for examples.
+   [Glitch](https://glitch.com/~aframe) is used as a recommended coding playground
+   and for examples.
 
-3. [Join us on Discord][Discord] and [Slack][slack] and if you have any
-questions, [search and ask on StackOverflow](http://stackoverflow.com/questions/ask/?tags=aframe),
-and someone will try to get to you!
+3. [Join us on Discord][discord] and [Slack][slack] and if you have any
+   questions, [search and ask on StackOverflow](http://stackoverflow.com/questions/ask/?tags=aframe),
+   and someone will try to get to you!
 
 4. When you build something, share your project online and we'll try to feature
-it on the [newsletter](https://aframe.io/subscribe/) and the
-[blog](https://aframe.io/blog/)!
+   it on the [newsletter](https://aframe.io/subscribe/) and the
+   [blog](https://aframe.io/blog/)!
 
 And it really helps to have a dig into the fundamentals on JavaScript and
 [three.js](https://threejs.org/). Have fun!

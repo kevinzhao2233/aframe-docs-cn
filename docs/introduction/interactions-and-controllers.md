@@ -1,7 +1,7 @@
 ---
 title: Interactions & Controllers
 type: introduction
-layout: docs
+# layout: docs
 parent_section: introduction
 order: 9
 examples:

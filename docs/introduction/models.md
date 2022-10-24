@@ -1,7 +1,7 @@
 ---
 title: 3D Models
 type: introduction
-layout: docs
+# layout: docs
 parent_section: introduction
 order: 10
 examples:

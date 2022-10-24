@@ -28,7 +28,7 @@ export default defineUserConfig({
     // 默认主题配置
     navbar: [
       {
-        text: '简介',
+        text: '起步',
         link: '/introduction/',
       },
       {
@@ -39,7 +39,7 @@ export default defineUserConfig({
 
     sidebar: [
       {
-        text: '简介',
+        text: '起步',
         link: '/introduction/',
         children: [
           '/introduction/index.md',
